@@ -1,6 +1,6 @@
 <?php
 
-namespace app\src\service;
+namespace app\src\services;
 
 use yii\helpers\Inflector;
 use app\models\Image;
@@ -23,7 +23,7 @@ class ImageService
      * 
      * @return void
      */
-    private function resizeImg(string $target, int $wmax, int $hmax, string $ext, string $previewTitle): void
+    private static function resizeImg(string $target, int $wmax, int $hmax, string $ext, string $previewTitle): void
     {
         $dest = Image::PREVIEW_IMAGE_UPLOAD_PATH . $previewTitle;
 

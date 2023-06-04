@@ -4,7 +4,7 @@ namespace app\controllers;
 
 use Yii;
 use yii\web\Controller;
-use app\src\service\ImageService;
+use app\src\services\ImageService;
 use app\models\forms\UploadImagesForm;
 use yii\web\UploadedFile;
 use yii\data\ActiveDataProvider;
